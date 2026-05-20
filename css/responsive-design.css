@@ -1,0 +1,200 @@
+
+
+/* Responsive Design - media for different screen sizes */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .star {
+        font-size: 24px;
+        cursor: pointer;
+        color: gray;
+        transition: color 0.2s ease-in-out;
+    }
+    
+    .star.selected, .star:hover {
+        color: gold;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    .pagination {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .pagination button {
+        padding: 10px 15px;
+        margin: 5px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .pagination button:hover {
+        background-color: #0056b3;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: auto;
+        text-align: center;
+    }
+
+    .swipe-container {
+        width: 90%;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/*ABOUT THIS PROJECT*/
+/* Swipe Container */
+.swipe-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Tab Navigation */
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: #e6649d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.tab:hover {
+    background: #ff85a2;
+}
+
+/* Swipe Animation */
+.swipe-content {
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.panel {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Sliding Effect */
+input#tab1:checked ~ .swipe-content {
+    transform: translateX(0%);
+}
+
+input#tab2:checked ~ .swipe-content {
+    transform: translateX(-50%);
+}
+
+
+
+/*INDEX*/
+/* Instructions Toggle Styling */
+.instructions-container {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.instructions-container summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d16ba5;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f8f8f8;
+    text-align: center;
+    transition: all 0.3s ease;
+    list-style: none;
+}
+
+.instructions-container summary:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+.instructions {
+    padding: 15px;
+    background: #fff0f5;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+    color: #d16ba5;
+    text-align: center;
+    font-size: 22px;
+}
+
+.instructions ul {
+    padding: 0 15px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/*FEEDBACK*/
+/* Hide thank-you message initially */
+.thank-you-message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+/* Show the thank-you message when form is submitted */
+#thank-you:target {
+    display: block;
+}
+
+
+/* Show only the selected project */
+#connect4-embedded:target,
+#transport-damage-detection:target, 
+#latest:target{
+    display: block;
+}
+/* If no target is selected, show a default message */
+.default-message {
+    display: block;
+}
+
+/* Hide the default message when a project is selected */
+#connect4-embedded:target ~ .default-message,
+#transport-damage-detection:target ~ .default-message {
+    display: none;
+}

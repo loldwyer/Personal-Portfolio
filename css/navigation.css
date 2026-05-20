@@ -1,0 +1,120 @@
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #e6649d;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #ff85a2;
+}
+
+/* Dropdown container */
+nav ul .dropdown {
+    position: relative;
+}
+
+/* Hide the dropdown menu initially */
+nav ul .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    min-width: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Dropdown links */
+nav ul .dropdown .dropdown-menu li {
+    padding: 10px;
+}
+
+nav ul .dropdown .dropdown-menu li a {
+    display: block;
+    color: #e6649d;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effects */
+nav ul .dropdown .dropdown-menu li a:hover {
+    background: #ff85a2;
+    color: white;
+}
+
+/* Show dropdown on hover */
+nav ul .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: auto;
+    padding: 12px 20px;
+    margin: 10px auto;
+    background-color: #e6649d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff85a2;
+    transform: scale(1.05);
+}
+
+/* Return Button */
+.return-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e6649d;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.return-button:hover {
+    color: #ff85a2;
+}
+
+.return-arrow {
+    margin-right: 8px;
+    font-size: 20px;
+}
