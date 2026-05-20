@@ -2,7 +2,9 @@
 
 **Created by:** Lauren Dwyer  
 View: https://loldwyer.github.io/Personal-Portfolio/
+
 Video of code in operation: https://youtu.be/iyM-P91OO10
+
 ## Project Overview
 
 This project is a static personal portfolio website developed for the EEN1037 Web Applications Development module.
