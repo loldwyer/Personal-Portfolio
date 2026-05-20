@@ -1,67 +1,135 @@
-===========================================
-      PORTFOLIO PROJECT - README
-===========================================
+PORTFOLIO PROJECT - README
 
-**Created by:** Lauren Dwyer  
-**Course:** EEN1037_20732 Web App Development  
-**University:** Dublin City University  
-**Email:** lauren.dwyer7@mail.dcu.ie  
+Created by: Lauren Dwyer
+Course: EEN1037_20732 Web App Development
+University: Dublin City University
+Email: lauren.dwyer7@mail.dcu.ie
 
-===========================================
- HOW TO RUN THIS PROJECT
-===========================================
 
-This is a static website that does NOT require a database or server.
-It can be opened directly in a web browser.
+PROJECT OVERVIEW
 
--------------------------------------------
- METHOD 1: OPEN LOCALLY
--------------------------------------------
-1. Download the project files.
-2. Open "index.html" in any modern browser (Chrome, Firefox, Edge, Safari).
-3. Navigate using the menu at the top.
+This project is a static personal portfolio website developed for the EEN1037 Web Applications Development module.
 
--------------------------------------------
- METHOD 2: USING VS CODE LIVE SERVER
--------------------------------------------
-1. Open the project folder in **Visual Studio Code (VS Code)**.
-2. Install the **"Live Server" extension**.
-3. Right-click `index.html` and select **"Open with Live Server."**
-4. The site will open automatically in your default browser.
+The website presents portfolio content including projects, resume information, blog posts, contact details and feedback options. It also includes interactive front-end features such as dropdown menus, animated page transitions and an admin-style content management area.
 
-===========================================
- USAGE INSTRUCTIONS
-===========================================
+The project was originally created as a static HTML, CSS and JavaScript portfolio and later extended with additional JavaScript functionality, local storage and admin dashboard features.
 
-**Navigation & Features:**
-- **Projects:** View my projects via the **Projects** menu. Clicking on a project title takes you to a **detailed page** with images and descriptions.
-- **Resume:** View my qualifications and work experience on the **Resume** page. You can also **download a PDF version**.
-- **Blog:** Read blog articles. In the future, this section will support dynamic content and comments.
-- **Contact Me:** Access contact details via the **Contact** page or hover over my **Profile Picture (top-right corner)** for a quick dropdown menu.
-- **Feedback:** Submit feedback or suggestions on the **Feedback** page.
-- **About This Portfolio:** The **About** page has two sections:
-    - **Project Overview (Assignment 1)**
-    - **Plan for Assignment 2**
-  You can switch between them using a **swipe animation** or select them from the **navigation dropdown**.
 
-**Interactive Features:**
-- **Dropdown Menus:** Hover over navigation items like **About** to see more options.
-- **Swipe Transition (About Page):** Toggle between "Project Overview" and "Plan for Assignment 2" with an interactive swipe effect.
-- **Project Navigation:** Easily move between projects with **animated transitions**.
+TECHNOLOGIES USED
 
-===========================================
- PLANNED ENHANCEMENTS (ASSIGNMENT 2)
-===========================================
+- HTML5
+- CSS3
+- JavaScript
+- Local Storage
+- DOM Manipulation
+- html2canvas
+- jsPDF
 
-- **JavaScript Features:**
-  - Form validation (email, phone, required fields)
-  - Local storage for form submissions
-  - Event handling (tooltips, popups)
-  - Navigation improvements (hamburger menu, dropdown animations)
 
-- **Admin Dashboard:**
-  - Secure login for managing blog posts & projects
+HOW TO RUN THIS PROJECT
 
-- **Booking System:**
-  - A calendar-based system to schedule hiring requests
+This is a static website. It does not require a database or backend server.
 
+Method 1: Open Locally
+
+1. Download or clone the project files.
+2. Open index.html in a modern web browser such as Chrome, Firefox, Edge or Safari.
+3. Use the navigation menu to move between pages.
+
+Method 2: Use VS Code Live Server
+
+1. Open the project folder in Visual Studio Code.
+2. Install the Live Server extension.
+3. Right-click index.html.
+4. Select Open with Live Server.
+5. The website will open automatically in your default browser.
+
+
+MAIN FEATURES
+
+Portfolio Pages
+
+- Home page with portfolio introduction
+- Projects page displaying project work
+- Resume page with qualifications and experience
+- Blog page for portfolio-related posts
+- Feedback page for user messages and suggestions
+- About page explaining the portfolio project
+
+Navigation and User Interface
+
+- Responsive navigation menu
+- Profile picture dropdown menu
+- About page dropdown options
+- Animated transitions between selected sections
+- User-friendly layout with consistent styling
+
+Projects Section
+
+- Displays project information
+- Allows users to view project details
+- Uses structured pages for project descriptions and images
+
+Resume Section
+
+- Displays education, skills and experience
+- Includes an option to download a PDF version
+- Designed as a clean online CV/resume page
+
+Blog Section
+
+- Displays blog posts
+- Supports interactive content features
+- Designed for future expansion with dynamic content
+
+Feedback Section
+
+- Allows users to submit feedback or suggestions
+- Includes form validation features
+- Stores feedback using browser local storage
+
+Admin Dashboard
+
+- Admin login area
+- Dashboard overview
+- Blog post management
+- Project management
+- Feedback inbox
+- Resume editing features
+- Local storage used to save and retrieve content
+
+
+INTERACTIVE FEATURES
+
+- Dropdown navigation menus
+- Profile picture contact menu
+- Sidebar menu in the admin dashboard
+- Form validation for user inputs
+- Local storage for saving form and dashboard data
+- Event handling for clicks, hovers and form submissions
+- PDF export functionality for resume content
+
+
+FOLDER AND FILE STRUCTURE
+
+The project includes HTML pages, CSS stylesheets, JavaScript files and image assets.
+
+Important files may include:
+
+- index.html
+- projects.html
+- resume.html
+- blog.html
+- feedback.html
+- about.html
+- admin-dashboard.html
+- CSS files for styling
+- JavaScript files for interactivity and local storage
+- Image and media assets used throughout the site
+
+
+NOTES
+
+This project is front-end only. It uses browser-based local storage rather than a database, so saved content may only be available in the same browser and device where it was entered.
+
+For best results, run the project using Live Server in Visual Studio Code.
