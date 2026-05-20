@@ -1,6 +1,7 @@
 # Portfolio Project
 
 **Created by:** Lauren Dwyer  
+View: https://loldwyer.github.io/Personal-Portfolio/
 
 ## Project Overview
 
