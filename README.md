@@ -1,12 +1,11 @@
-PORTFOLIO PROJECT - README
+# Portfolio Project
 
-Created by: Lauren Dwyer
-Course: EEN1037_20732 Web App Development
-University: Dublin City University
-Email: lauren.dwyer7@mail.dcu.ie
+**Created by:** Lauren Dwyer  
+**Course:** EEN1037_20732 Web App Development  
+**University:** Dublin City University  
+**Email:** lauren.dwyer7@mail.dcu.ie  
 
-
-PROJECT OVERVIEW
+## Project Overview
 
 This project is a static personal portfolio website developed for the EEN1037 Web Applications Development module.
 
@@ -14,8 +13,7 @@ The website presents portfolio content including projects, resume information, b
 
 The project was originally created as a static HTML, CSS and JavaScript portfolio and later extended with additional JavaScript functionality, local storage and admin dashboard features.
 
-
-TECHNOLOGIES USED
+## Technologies Used
 
 - HTML5
 - CSS3
@@ -25,29 +23,27 @@ TECHNOLOGIES USED
 - html2canvas
 - jsPDF
 
-
-HOW TO RUN THIS PROJECT
+## How to Run This Project
 
 This is a static website. It does not require a database or backend server.
 
-Method 1: Open Locally
+### Method 1: Open Locally
 
 1. Download or clone the project files.
-2. Open index.html in a modern web browser such as Chrome, Firefox, Edge or Safari.
+2. Open `index.html` in a modern web browser such as Chrome, Firefox, Edge or Safari.
 3. Use the navigation menu to move between pages.
 
-Method 2: Use VS Code Live Server
+### Method 2: Use VS Code Live Server
 
 1. Open the project folder in Visual Studio Code.
-2. Install the Live Server extension.
-3. Right-click index.html.
-4. Select Open with Live Server.
+2. Install the **Live Server** extension.
+3. Right-click `index.html`.
+4. Select **Open with Live Server**.
 5. The website will open automatically in your default browser.
 
+## Main Features
 
-MAIN FEATURES
-
-Portfolio Pages
+### Portfolio Pages
 
 - Home page with portfolio introduction
 - Projects page displaying project work
@@ -56,39 +52,39 @@ Portfolio Pages
 - Feedback page for user messages and suggestions
 - About page explaining the portfolio project
 
-Navigation and User Interface
+### Navigation and User Interface
 
 - Responsive navigation menu
 - Profile picture dropdown menu
 - About page dropdown options
 - Animated transitions between selected sections
-- User-friendly layout with consistent styling
+- Consistent styling across pages
 
-Projects Section
+### Projects Section
 
 - Displays project information
 - Allows users to view project details
 - Uses structured pages for project descriptions and images
 
-Resume Section
+### Resume Section
 
 - Displays education, skills and experience
 - Includes an option to download a PDF version
 - Designed as a clean online CV/resume page
 
-Blog Section
+### Blog Section
 
 - Displays blog posts
 - Supports interactive content features
 - Designed for future expansion with dynamic content
 
-Feedback Section
+### Feedback Section
 
 - Allows users to submit feedback or suggestions
 - Includes form validation features
 - Stores feedback using browser local storage
 
-Admin Dashboard
+### Admin Dashboard
 
 - Admin login area
 - Dashboard overview
@@ -98,8 +94,7 @@ Admin Dashboard
 - Resume editing features
 - Local storage used to save and retrieve content
 
-
-INTERACTIVE FEATURES
+## Interactive Features
 
 - Dropdown navigation menus
 - Profile picture contact menu
@@ -109,26 +104,7 @@ INTERACTIVE FEATURES
 - Event handling for clicks, hovers and form submissions
 - PDF export functionality for resume content
 
-
-FOLDER AND FILE STRUCTURE
-
-The project includes HTML pages, CSS stylesheets, JavaScript files and image assets.
-
-Important files may include:
-
-- index.html
-- projects.html
-- resume.html
-- blog.html
-- feedback.html
-- about.html
-- admin-dashboard.html
-- CSS files for styling
-- JavaScript files for interactivity and local storage
-- Image and media assets used throughout the site
-
-
-NOTES
+## Notes
 
 This project is front-end only. It uses browser-based local storage rather than a database, so saved content may only be available in the same browser and device where it was entered.
 
