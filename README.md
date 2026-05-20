@@ -1,9 +1,6 @@
 # Portfolio Project
 
 **Created by:** Lauren Dwyer  
-**Course:** EEN1037_20732 Web App Development  
-**University:** Dublin City University  
-**Email:** lauren.dwyer7@mail.dcu.ie  
 
 ## Project Overview
 
@@ -85,6 +82,8 @@ This is a static website. It does not require a database or backend server.
 - Stores feedback using browser local storage
 
 ### Admin Dashboard
+Username: admin
+Password: 1234
 
 - Admin login area
 - Dashboard overview
