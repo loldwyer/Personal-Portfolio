@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Dwyer - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+        <!-- new Profile section with dropdown contact menu -->
+<div class="profile-container">
+    <img src="images/profile pic.png" alt="Lauren Dwyer" class="profile-pic" id="profile-toggle">
+    <div class="profile-dropdown" id="profile-menu">
+        <a href="mailto:lauren@example.com">📧 Email Me</a>
+        <a href="feedback.html">📝 Message me</a>
+        <hr>
+        <a href="admin-login.html">🔑 Admin Login</a>
+    </div>
+</div>
+
+
+
+    <!-- Hero header with introduction -->
+    <header class="hero-header">
+        <h1>Lauren Dwyer</h1>
+        <p>Electronic and Computer Engineer Masters Student | Bachelors of Software Engineering Graduate | Seeking Employment</p>
+    </header>
+
+    <!-- Navigation menu with dropdowns -->
+    <nav>
+        <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+                <a href="about.html">About This Portfolio</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">Portfolio Overview</a></li>
+                    <li><a href="feedback.html">Give Your Feedback</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main container with introduction and navigation help -->
+    <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <section class="bio">
+            <h2>Who Am I?</h2>
+            <p>
+                Hi, I'm <strong>Lauren Dwyer</strong>, an aspiring <strong>Electronic and Computer Engineer</strong> with a passion for 
+                <strong>software development</strong> and <strong>embedded systems</strong>. This website showcases my projects, experience, 
+                testimonials, and ways to contact me. Click on the "Instructions" button below for help navigating the webpages.
+            </p>
+        </section>
+
+        <!-- Collapsible instructions section for navigation help -->
+        <details class="instructions-container">
+            <summary class="toggle-button">📖 Instructions</summary>
+
+            <section class="instructions">
+                <h2>How to Navigate</h2>
+                <ul>
+                    <li><strong>Projects:</strong> Explore my academic and personal projects by clicking on the <a href="projects.html">Projects Page</a>.</li>
+                    <li><strong>Resume:</strong> View my qualifications, education, and experience on the <a href="resume.html">Resume Page</a>.</li>
+                    <li><strong>Blog:</strong> Read, like and comment on the blog posts related to my work on my <a href="blog.html">Blog</a>.</li>
+                    <li><strong>Feedback & Contact:</strong> 
+                        <ul>
+                            <li>Submit feedback through the <a href="feedback.html">Feedback Form</a>.</li>
+                            <li>Find ways to contact me by clicking on the <strong>profile picture</strong> (top right) to access a quick dropdown menu.</li>
+                        </ul>
+                    </li>
+                    <li><strong>About This Portfolio:</strong> The <a href="about.html">About Page</a> showcases:
+                        <ul>
+                            <li><strong>Project Overview (Assignment 1):</strong> The original static portfolio concept.</li>
+                            <li><strong>Plan for Assignment 2:</strong> Planned enhancements using JavaScript for interactivity.</li>
+                            <li><strong>NEW:Project Overview (Assignment 2)</strong></li>
+                        </ul>
+                        You can switch between these three sections using a <strong>swipe animation</strong> or navigate to them from the dropdown menu in the navigation bar.
+                    </li>
+                    <li><strong>Interactive Navigation:</strong> The navigation menu includes dropdowns. Hover over "About This Portfolio" to directly access "Portfolio Overview" or "Give Your Feedback".</li>
+                    <li><strong>NEW:</strong> Admin users can make changes to the blog, projects and resume by accessing the <strong>Admin Login</strong> linked in the profile picture dropdown.</li>
+                </ul>
+            </section>
+        </details>
+    </div>
+
+    <!-- Blog preview section -->
+    <div class="container">
+        <h2>Latest Blog Post</h2>
+        <article class="blog-preview">
+            <!-- Content will be dynamically replaced -->
+            <h3>Loading latest blog post...</h3>
+            <p>Please wait...</p>
+                        
+            <a href="blog.html" class="read-more">📖 Read More</a>
+        </article>
+    </div>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2025 Lauren Dwyer. All rights reserved.</p>
+    </footer>
+
+
+    
+
+    <script src="js/likes-comments.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/profile-menu.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/events.js"></script>
+    
+
+</body>
+</html>

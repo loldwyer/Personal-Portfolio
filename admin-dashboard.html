@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin-dash.css">
+    <link rel="stylesheet" href="css/admin-blog.css">
+    <link rel="stylesheet" href="css/admin-projects.css">
+    <link rel="stylesheet" href="css/resume-admin.css">
+</head>
+<body>
+
+    <div class="dashboard" id="adminDashboard">
+        
+        <button class="menu-toggle">☰ Menu</button>
+        <aside class="sidebar" id="adminSidebar">
+            <ul>
+                <li><a href="#" class="panel-option" id="mainDashboard">Main</a></li>
+                <li><a href="#" class="panel-option" id="adminInboxButton">Admin Inbox</a></li>
+                <li><a href="#" class="panel-option" id="manageProjectsButton">Manage Projects</a></li>
+                <li><a href="#" class="panel-option" id="manageBlogButton">Make Edits to the Blog</a></li>
+                <li><a href="#" class="panel-option" id="editResumeButton">Edit Resume</a></li>
+               
+                <li><a href="#" id="logout-button">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <section id="mainDashboard-section" class="content-section hidden">
+                <div class="admin-overview">
+                    <header>
+                        <h1>Welcome, Admin</h1>
+                    </header>
+                    <div class="overview-card">
+                        <h3>📩 New Feedback</h3>
+                        <p><span id="feedbackCount">0</span> new messages</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>📂 Active Projects</h3>
+                        <p><span id="projectCount">0</span> ongoing</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>📝 Blog Updates</h3>
+                        <p>Last post: <span id="lastBlogDate">-</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admin Inbox -->
+            <section id="adminInbox-section" class="content-section hidden">
+                <h2>Admin Inbox</h2>
+                <p>Total Feedback: <span id="feedback-count">0</span></p>
+                <div id="feedback-container">Loading feedback...</div>
+            </section>
+
+            <!-- Manage Projects -->
+            <section id="projectManagement-section" class="content-section hidden">
+                <h2>Manage Projects</h2>
+                <div class="projects-container">
+                    <!-- Add New Project Form -->
+                    <div class="project-form">
+                        <h3>Add New Project</h3>
+                        <form id="projectForm">
+                            <input type="text" id="projectTitle" placeholder="Project Title" required>
+                            <textarea id="projectDescription" placeholder="Project Description" required></textarea>
+                            <input type="url" id="projectLink" placeholder="Project Link (optional)">
+                            <button type="submit">Add Project</button>
+                        </form>
+                    </div>
+            
+                    <!-- Previous Projects List -->
+                    <div class="project-list">
+                        <h3>Previous Projects</h3>
+                        <div id="projects"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Manage Blog -->
+            <section id="manageBlog-section" class="content-section hidden">
+                <h2>Manage Blog Posts</h2>
+                <div class="blog-container">
+                    <!-- Blog Form & Editor -->
+                    <div class="blog-form">
+                        <h3>Create a Blog Post</h3>
+                        <form id="blogForm">
+                            <label for="blogTitle">Blog Title</label>
+                            <input type="text" id="blogTitle" required>
+            
+                            <label for="blogFont">Font:</label>
+                            <select id="blogFont">
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Courier New">Courier New</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Georgia">Georgia</option>
+                            </select>
+            
+                            <label for="blogFontSize">Font Size:</label>
+                            <select id="blogFontSize">
+                                <option value="12px">12px</option>
+                                <option value="14px">14px</option>
+                                <option value="16px" selected>16px</option>
+                                <option value="18px">18px</option>
+                                <option value="20px">20px</option>
+                            </select>
+            
+                            <label for="blogColor">Font Color:</label>
+                            <input type="color" id="blogColor">    
+                            <button type="button" id="applyStyle">Apply styling to highlighted text</button>
+            
+                            <label for="blogImage">Upload Image:</label>
+                            <input type="file" id="blogImage" accept="image/*"> 
+            
+                            <button type="submit">Save Blog Post</button>
+                        </form>
+            
+                        <!-- Editable Blog Content -->
+                        <div id="blogEditor" contenteditable="true">
+                            Type your blog content here...
+                        </div> 
+                    </div>
+            
+                    <!-- Blog Posts Display -->
+                    <div class="blog-list">
+                        <h3>Current Blog Posts</h3>
+                        <div id="blog-posts"></div>
+                        <div id="blog-stats-container"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Edit Resume -->
+            <section id="editResume-section" class="content-section hidden">
+                <h2>Edit Resume</h2>
+                <!-- Font Controls -->
+                <div class="resume-style-controls">
+                    <label for="resumeFont">Font:</label>
+                    <select id="resumeFont">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Georgia">Georgia</option>
+                    </select>
+
+                    <label for="resumeFontSize">Font Size:</label>
+                    <select id="resumeFontSize">
+                        <option value="12px">12px</option>
+                        <option value="14px">14px</option>
+                        <option value="16px" selected>16px</option>
+                        <option value="18px">18px</option>
+                        <option value="20px">20px</option>
+                    </select>
+
+                    <label for="resumeColor">Font Color:</label>
+                    <input type="color" id="resumeColor">
+
+                    <button type="button" id="applyResumeStyle">Apply Style</button>
+                </div>
+ 
+                <div id="resumeEditor" contenteditable="true"></div>
+                <button id="saveResume">Save Resume</button>
+            </section>
+    
+        </main>
+    </div>
+    
+    
+    <script src="js/admin-dash.js"></script>
+    <script src="js/sidebar-toggle.js"></script>
+    <script src="js/admin-projects.js"></script>
+    <script src="js/admin-blog.js"></script>
+    <script src="js/admin-logout.js"></script>
+
+    <script src="js/admin-blog.js"></script>
+    <script src="js/admin-projects.js"></script>
+    <script src="js/resume-edit.js"></script>
+    
+
+    <script src="js/local-storage.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/likes-comments.js"></script>
+    <script src="js/profile-menu.js"></script>
+    
+    
+</body>
+</html>

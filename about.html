@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Portfolio - Lauren Dwyer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <!-- new Profile section with dropdown contact menu -->
+    <div class="profile-container">
+        <img src="images/profile pic.png" alt="Lauren Dwyer" class="profile-pic" id="profile-toggle">
+        <div class="profile-dropdown" id="profile-menu">
+            <a href="mailto:lauren@example.com">📧 Email Me</a>
+            <a href="feedback.html">📝 Message me</a>
+            <a href="contact.html">📞 See all contact options</a>
+            <hr>
+            <a href="admin.html">🔑 Admin Login</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>About This Portfolio</h1>
+    </header>
+
+    <!---Navigation menu-->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠︎ Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="feedback.html">Give Your Feedback</a></li>
+         </ul>
+    </nav>
+
+    <!---Main container with tabbed sections-->
+    <div class="container swipe-container">
+        <!--Buttons for swipe-content navigation-->
+        <input type="radio" id="tab1" name="tabs" checked>
+        <input type="radio" id="tab2" name="tabs">
+        <input type="radio" id="tab3" name="tabs">
+        
+        <div class="tabs">
+            <label for="tab1" class="tab">Assignment 1 Overview</label>
+            <label for="tab2" class="tab">Plan for Assignment 2</label>
+            <label for="tab3" class="tab">Assignment 2 Overview</label>
+        </div>
+
+        <div class="swipe-content">
+            <!-- Project Overview (Assignment 1) -->
+            <div class="panel panel1">
+                <h2>Project Overview (Assignment 1)</h2>
+                <p>
+                    This portfolio website was developed as part of the <strong>EEN1037_20732 Web App Development</strong> course.
+                    It serves as a professional platform to showcase my <strong>projects, experience, blog, resume, and contact details</strong> while offering an interactive and user-friendly experience.
+                </p>
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li><strong>HTML5</strong> – Structure and content.</li>
+                    <li><strong>CSS3</strong> – Custom styling and layout.</li>
+                    <li><strong>Local Storage</strong> – Previously used for testimonials (now replaced by a blog).</li>
+                    <li><strong>Responsive Design</strong> – Optimized for desktop & mobile.</li>
+                    <li><strong>Static Pages Only</strong> – No JavaScript for core functionality.</li>
+                </ul>
+
+                <h3>Project Features</h3>
+                <ul>
+                    <li><strong>Interactive Navigation:</strong> Dropdown menus and profile-based quick contact.</li>
+                    <li><strong>Resume Page:</strong> Displays my qualifications and work experience.</li>
+                    <li><strong>Blog:</strong> Displays multiple blog posts, with the latest previewed on the homepage.</li>
+                    <li><strong>Projects Page:</strong> Lists all my projects, each linking to a detailed project description.</li>
+                    <li><strong>Project Details:</strong> Each project has its own page with images, descriptions, and clickable images for easy viewing.</li>
+                    <li><strong>Contact & Feedback:</strong> Dedicated contact page and a simple feedback form.</li>
+                </ul>
+            </div>
+
+            <!-- Plan for Assignment 2 -->
+            <div class="panel panel2">
+                <h2>Plan for Assignment 2</h2>
+                <p>
+                    In the next phase, I will integrate <strong>JavaScript</strong> to enhance interactivity and improve the user experience.
+                </p>
+
+                <h3>Navigation Enhancements (4 Marks)</h3>
+                <ul>
+                    <li>Implement a <strong>hamburger menu</strong> for mobile users.</li>
+                    <li>Add a <strong>dropdown animation</strong> for better UI interaction.</li>
+                    <li>Add return to the <strong>previous page</strong> option.</li>
+                </ul>
+
+                <h3>Form Data Validation (4 Marks)</h3>
+                <ul>
+                    <li>Ensure <strong>email format validation</strong> to prevent incorrect entries.</li>
+                    <li>Validate <strong>phone numbers</strong> for correct input length.</li>
+                    <li>Add <strong>real-time feedback</strong> for required fields (feedback.html and blog comments).</li>
+                </ul>
+
+                <h3>Local Storage for Forms (4 Marks)</h3>
+                <ul>
+                    <li>Store <strong>submitted feedback</strong> and display it in a table format.</li>
+                    <li>Pre-fill the <strong>last submission</strong> when users revisit the page.</li>
+                </ul>
+
+                <h3>Event Handling (3 Marks)</h3>
+                <ul>
+                    <li>Show <strong>tooltips</strong> when hovering over project images.</li>
+                    <li>Trigger <strong>pop-ups</strong> after form submissions.</li>
+                    <li>Prevent <strong>right-click copying</strong> on the resume page.</li>
+                </ul>
+
+                <h3>Additional Enhancements</h3>
+                <ul>
+                    <li><strong>Enhanced Resume Download:</strong> Implement an automated PDF generator.</li>
+                    <li><strong>Admin Content Management:</strong> Secure login to edit content dynamically.</li>
+                    <li><strong>Feedback Inbox:</strong> A dashboard for managing submissions and booking requests.</li>
+                    <li><strong>CMS-Based Blog:</strong> Dynamic blog post creation and management.</li>
+                    <li><strong>Backend Integration:</strong> Storing feedback, projects, and user data securely.</li>
+                </ul>
+
+                <p>
+                    These updates will transition this portfolio into an <strong>interactive web application</strong>, improving usability, automation, and functionality while enhancing the user experience.
+                </p>
+            </div>
+
+            <div class="panel panel3">
+                <h2>Assignment 2 Overview</h2>
+                <p>
+                    In Assignment 2, the Personal Portfolio Website has been extended to include 
+                    client-side interactivity and an Admin Dashboard, enabling real-time content management.
+                </p>
+                <ul>
+                    <li><strong>Secure Admin Dashboard</strong> for managing projects, blog posts, and the resume.</li>
+                    <li><strong>Real-time UI updates</strong> with JavaScript-based event handling.</li>
+                    <li><strong>Enhanced resume editor and blog posting</strong> with font customization and PDF export.</li>
+                    <li><strong>Blog post interaction system</strong> (likes and comments).</li>
+                </ul>
+            
+                <h3>Key Features & Enhancements</h3>
+                <h4>1. Admin Dashboard</h4>
+                <ul>
+                    <li>✅ Displays feedback count, project count and latest blog timestamp.</li>
+                    <li>✅ Secure login system prevents unauthorized access.</li>
+                    <li>✅ JavaScript-powered sidebar for easy navigation.</li>
+                </ul>
+            
+                <h4>2. Editors (resume and blog) with Formatting & PDF resume Export</h4>
+                <ul>
+                    <li>✅ Customizable text with font styles, colors, and sizes.</li>
+                    <li>✅ Resume content saved using localStorage.</li>
+                    <li>✅ High-quality PDF export using jsPDF.</li>
+                </ul>
+            
+                <h4>3. Blog Post Management</h4>
+                <ul>
+                    <li>✅ Admins can create, format, and delete blog posts.</li>
+                    <li>✅ Users can like and comment on posts.</li>
+                    <li>✅ Side-by-side layour for better usability.</li>
+                </ul>
+            
+                <h4>4. Project Management</h4>
+                <ul>
+                    <li>✅ Admins can upload, edit, and delete projects.</li>
+                    <li>✅ Inline editing allows quick updates.</li>
+                    <li>✅ Side-by-side layout for better usability.</li>
+                </ul>
+            
+                <h4>5. Form Validation & Data Persistence</h4>
+                <ul>
+                    <li>✅ Real-time validation for form inputs.</li>
+                    <li>✅ Local Storage used to store feedback, resume data, projects, and blogs.</li>
+                </ul>
+            
+                <h3>Technical Stack</h3>
+                <ul>
+                    <li>✔ <strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li>✔ <strong>Dynamic Content Handling:</strong> Local Storage, DOM Manipulation</li>
+                    <li>✔ <strong>JavaScript Libraries:</strong> html2canvas, jsPDF</li>
+                    <li>✔ <strong>Performance Optimization:</strong> Efficient script management, reduced reflows</li>
+                </ul>
+            
+                <h3>Code References & Implementation</h3>
+                <ul>
+                    <li>✔ <strong>Navigation & Sidebar:</strong> <code>sidebar-toggle.js</code></li>
+                    <li>✔ <strong>Blog Post Management:</strong> <code>admin-blog.js</code><code>admin-dash.js</code></li>
+                    <li>✔ <strong>Project Management:</strong> <code>admin-project.js</code><code>admin-dash.js</code></li>
+                    <li>✔ <strong>Resume Editor:</strong> <code>resume-edit.js</code></li>
+                </ul>
+            
+                <h3>Summary</h3>
+                <p>
+                    Assignment 2 significantly enhances the Personal Portfolio Website by adding a dynamic 
+                    admin dashboard, an interactive resume editor, blog post management, and real-time project handling. 
+                    The JavaScript-powered features ensure a seamless and efficient content management experience.
+                </p>
+            </div>
+                            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lauren Dwyer. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/likes-comments.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/profile-menu.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/events.js"></script>
+
+
+</body>
+</html>

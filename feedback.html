@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Lauren Dwyer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- new Profile section with dropdown contact menu -->
+    <div class="profile-container">
+        <img src="images/profile pic.png" alt="Lauren Dwyer" class="profile-pic" id="profile-toggle">
+        <div class="profile-dropdown" id="profile-menu">
+            <a href="mailto:lauren@example.com">📧 Email Me</a>
+            <hr>
+            <a href="admin-login.html">🔑 Admin Login</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Feedback</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Portfolio Overview</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>We'd Love Your Feedback! 💬</h2>
+        <p>Your thoughts and suggestions help improve this portfolio. Let me know what you think!</p>
+
+        <form id="feedback-form">
+            <label for="feedback-name">Your Name:</label>
+            <input type="text" id="feedback-name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback-message">Your Feedback:</label>
+            <textarea id="feedback-message" name="message" placeholder="Write your feedback here..." required></textarea><br><br>
+        
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div id="thank-you" class="thank-you-message">
+            <h2>Thank you for your feedback! 🎉</h2>
+            <p>Your message has been received.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lauren Dwyer. All rights reserved.</p>
+    </footer>
+ 
+    <script src="js/local-storage.js"></script>
+    <script src="js/profile-menu.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/events.js"></script>
+
+
+</body>
+</html>

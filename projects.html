@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <!-- new Profile section with dropdown contact menu -->
+<div class="profile-container">
+    <img src="images/profile pic.png" alt="Lauren Dwyer" class="profile-pic" id="profile-toggle">
+    <div class="profile-dropdown" id="profile-menu">
+        <a href="mailto:lauren@example.com">📧 Email Me</a>
+        <a href="feedback.html">📝 Message me</a>
+        <hr>
+        <a href="admin-login.html">🔑 Admin Login</a>
+    </div>
+</div>
+
+    <header>
+        <h1>Project Showcase</h1>
+    </header>
+
+    <!-- Navigation menu with dropdowns -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠︎ Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+                <a href="about.html">About This Portfolio</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">Portfolio Overview</a></li>
+                    <li><a href="feedback.html">Give Your Feedback</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <section id="projectList">
+            <h2>Available Projects</h2>
+            <div id="projects"></div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Lauren Dwyer. All rights reserved.</p>
+    </footer>
+
+   
+    
+    <script src="js/likes-comments.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/profile-menu.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/projects.js"></script>
+
+
+</body>
+</html>
